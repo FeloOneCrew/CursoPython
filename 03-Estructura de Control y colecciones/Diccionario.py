@@ -20,11 +20,37 @@ vacío: {}. Colocar una lista de pares clave:valor separada por comas
  se muestran en la salida.
 
 """
-
+#Diccionario numeros
 numeros = {'uno':1 ,'dos':2 ,'tres':3 , 'cuatro':4 , 'cinco':5 }
 print(numeros)
-
 numeros['seis'] = 6 # Añadir un nuevo elemento al diccionario
 print(numeros)
-print(numeros['tres'])
+print(numeros['tres'])#Imprimir un valor segun la clave.
+FELO=numeros.get('cinco',"NO SE ENCONTRO")# Buscar un elemento en el diccionario
+print(FELO)
+FELO=numeros.get('siete',"NO SE ENCONTRO")# Buscar un elemento en el diccionario
+print(FELO)
+claves= numeros.keys() #Para obtener solo las claves del diccionario. 
+print(claves)
+valores= numeros.values()
+print(valores) #Para obtener solo los valores del diccionario. 
+LosItems= numeros.items()
+print(LosItems) #Para obtener toda la info del diccionario
+Eliminar= numeros.pop('tres')
+print(Eliminar) #Para eliminar un elemento del diccionario, hay que indicar la clave.
+print("El diccionario actualizado es: ")
+print(numeros)
+#ITERAR UN DICCIONARIO solo las claves
+for numero in numeros:
+    print(numero)
+#ITERAR UN DICCIONARIO solo los datos
+for numero1 in numeros.values():
+    print(numero1)
+#ITERAR UN DICCIONARIO con clave y dato
+for clave, numero2 in numeros.items():
+    print(clave, numero2)
 
+
+
+limpiar= numeros.clear()#Borrar todos los datos del diccionario
+print(limpiar)

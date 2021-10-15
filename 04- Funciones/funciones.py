@@ -21,7 +21,7 @@ de estos tipos de return:
 
 """
 def saludar():
-    global nombre
+    #global nombre
     nombre = "Felipe Gómez"
     edad= 33
     #print("Hola MUNDO,FUNCION SALUDAR")

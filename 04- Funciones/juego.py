@@ -15,13 +15,13 @@ def jugar(vidas):
             vidas -= 1
 
         if vidas == 0:
-            print('GAME OVER')
+            print('GAME OVER, LOSER')
             break
 
         print(f'Te quedan {vidas} vidas')
 
     if numero_elegido == numero_random:
-        print("FELICIDADES GANASTE")
+        print("FELICIDADES GANASTE CAMPEÓN")
 
 def main():
     while True:
